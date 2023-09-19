@@ -19,19 +19,9 @@ WebUI.callTestCase(findTestCase('Auth/Login/Block-Login Success valid cridential
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Home/card_samsungS6'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Object Repository/Home/button_addToCart'))
-
-WebUI.delay(2)
-
-WebUI.acceptAlert()
-
 WebUI.click(findTestObject('Object Repository/Home/navbar_cart'))
 
-WebUI.verifyTextPresent('Samsung galaxy s6', true)
+WebUI.click(findTestObject('Object Repository/cart/button_deleteItem'))
 
 WebUI.closeBrowser()
 
