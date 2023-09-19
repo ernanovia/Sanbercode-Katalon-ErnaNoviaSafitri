@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login Success Failed</name>
+   <name>Delete cart success</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>651007fb-d3f9-4441-8734-dccc2134ab3e</testCaseGuid>
+   <testCaseGuid>a6c3d144-0c59-4ca8-9f4a-48222d253d69</testCaseGuid>
 </TestCaseEntity>

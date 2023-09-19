@@ -15,27 +15,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-def randomNumber = org.apache.commons.lang.RandomStringUtils.randomNumeric(5)
-
-println(randomNumber)
-
-//def username = 'ernaqa'
-//def password = '123456'
-//def randomUsername = username+randomNumber
-WebUI.openBrowser(GlobalVariable.url)
-
-WebUI.click(findTestObject('Object Repository/Home/navbar_signup'))
+WebUI.callTestCase(findTestCase('Auth/Login/Block-Login Success valid cridential'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
-//input data
-WebUI.setText(findTestObject('Object Repository/Register/input_username'), username)
+WebUI.click(findTestObject('Object Repository/Home/card_samsungS6'))
 
-WebUI.setText(findTestObject('Object Repository/Register/input_password'), password)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Register/button_signup'))
+WebUI.click(findTestObject('Object Repository/Home/button_addToCart'))
 
-WebUI.verifyAlertPresent(3)
+WebUI.delay(2)
+
+WebUI.acceptAlert()
+
+WebUI.click(findTestObject('Object Repository/Home/navbar_cart'))
+
+WebUI.verifyTextPresent('Samsung galaxy s6', true)
 
 WebUI.closeBrowser()
+
+//WebUI.verifyTextPresent('Product added.', true)
 

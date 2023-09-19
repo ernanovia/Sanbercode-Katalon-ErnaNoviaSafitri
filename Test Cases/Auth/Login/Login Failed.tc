@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Register Failed</name>
+   <name>Login Failed</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>88d110c8-b418-4d97-9590-961e21e203a4</testCaseGuid>
+   <testCaseGuid>67bcb3b1-f4ed-470d-bc9b-7f241c90119f</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>022f64a0-5ad0-40e1-aa79-6efd10156adb</id>
+      <id>b3288df3-60e2-47e4-9054-f66657b295e0</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>e206ed3c-e05f-4666-bb96-0e851a6c9a8f</id>
+      <id>0682d9d1-9bb6-428a-b9c2-b34107688cc2</id>
       <masked>false</masked>
       <name>password</name>
    </variable>
