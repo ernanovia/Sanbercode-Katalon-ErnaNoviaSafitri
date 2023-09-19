@@ -15,23 +15,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-def username = 'unregisteruser'
-def password = 'wrongpassword'
+WebUI.callTestCase(findTestCase('Auth/Login/Block-Login Success valid cridential'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser(GlobalVariable.url)
-WebUI.click(findTestObject('Object Repository/Home/navbar_login'))
 WebUI.delay(2)
 
-//input data
-WebUI.setText(findTestObject('Object Repository/Login/input_username'), username)
-WebUI.setText(findTestObject('Object Repository/Login/input_password'), password)
+WebUI.click(findTestObject('Object Repository/Home/card_samsungS6'))
 
-WebUI.click(findTestObject('Object Repository/Login/button_login'))
 WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Home/button_addToCart'))
+
+WebUI.delay(2)
+
+WebUI.acceptAlert()
+
+WebUI.click(findTestObject('Object Repository/Home/navbar_cart'))
+
+WebUI.verifyTextPresent('Samsung galaxy s6', true)
+
 WebUI.closeBrowser()
 
-
-//WebUI.verifyTextPresent('Wrong password.', true)
-//WebUI.verifyTextPresent('User does not exist.', false)
-//WebUI.verifyAlertPresent(2)
+//WebUI.verifyTextPresent('Product added.', true)
 
