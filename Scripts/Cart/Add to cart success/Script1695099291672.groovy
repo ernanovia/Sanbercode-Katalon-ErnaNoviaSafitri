@@ -19,11 +19,11 @@ WebUI.callTestCase(findTestCase('Auth/Login/Block-Login Success valid cridential
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Home/card_samsungS6'))
+WebUI.click(findTestObject('cart/card_samsungS6'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Home/button_addToCart'))
+WebUI.click(findTestObject('cart/button_addToCart'))
 
 WebUI.delay(2)
 
